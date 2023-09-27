@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx_passmanage_app.AddAccControl">
+    <children>
+        <AnchorPane prefHeight="273.0" prefWidth="425.0" style="-fx-background-color: #3e8272; -fx-border-color: #b8d9d1;">
+            <children>
+                <AnchorPane layoutX="10.0" layoutY="15.0" prefHeight="241.0" prefWidth="375.0" style="-fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: black; -fx-background-color: #b8d9d1; -fx-border-color: #277362;">
+                    <children>
+                        <Label fx:id="IntroLabel" layoutX="48.0" layoutY="26.0" text="Enter the login you would like to insert" textFill="#377364">
+                            <font>
+                                <Font name="Microsoft JhengHei Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <AnchorPane layoutX="75.0" layoutY="73.0">
+                            <children>
+                                <Label layoutY="4.0" text="Category:" textFill="#377364">
+                                    <font>
+                                        <Font name="Microsoft JhengHei Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutY="39.0" text="Username:" textFill="#377364">
+                                    <font>
+                                        <Font name="Microsoft JhengHei Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutY="73.0" text="Password:" textFill="#377364">
+                                    <font>
+                                        <Font name="Microsoft JhengHei Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="category" layoutX="79.0" />
+                                <TextField fx:id="username" layoutX="79.0" layoutY="35.0" />
+                                <TextField fx:id="password" layoutX="79.0" layoutY="69.0" />
+                            </children>
+                        </AnchorPane>
+                        <Button fx:id="submitButton" layoutX="199.0" layoutY="184.0" mnemonicParsing="false" onAction="#addSubmit" style="-fx-background-color: #377364; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: white; -fx-border-width: 3;" text="Submit" textFill="WHITE" underline="true">
+                            <font>
+                                <Font name="Consolas Bold" size="12.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                        <Button fx:id="cancelButton" cancelButton="true" layoutX="125.0" layoutY="184.0" mnemonicParsing="false" onAction="#cancelAdd" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-width: 3;" text="Cancel" textFill="#377364" underline="true">
+                            <font>
+                                <Font name="Consolas Bold" size="12.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
